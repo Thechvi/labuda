@@ -1,28 +1,39 @@
-<input value="hello">
-<h1>Pickup</h1>
-<ul>
-	<li>Haircut</li>
-	<li>Dress up</li>
-	<li>Learn some jokes</li>
-	<li>Approach to girl</li>
-	<li>Say 'Hello'</li>
-	<li>Tell she some jokes</li>
-	<li>Take her phone number</li>
-</ul>
+<input value='Vitali' class='first-name-input' id='first-name'>
+<input value='Chabatar' class='last-name-input' id='last-name'>
+<input value='Szczecin' class='address-input' id='address'>
+<select id='cities'>
+	<option>Kiev</option>
+	<option selected='selected'>Minsk</option>
+	<option>Szczecin</option>
+</select>
+<textarea id='hobbies'>HTML, CSS, JS</textarea>
+<!--<div id='avatar-wrapper'>
+	<img src='https://www.studiplom.ru/LK/user/2/kp/Mashina_moechnaya_dlya_moyki_detaley_mashin(2).png' />
+</div> -->
 
 <script>
-	window.alert('number 1');
-	window.alert('number 2');
-	window.alert('number 3');
-	window.alert('number 4');
-	window.alert('number 5');
-	window.alert('number 6');
-	window.alert('number 7');
-	window.alert('number 8');
-	window.alert('number 9');
-	window.alert('number 10');
+	//определяем переменные
+	var firstNameId = 'first-name';
+	var firstNameEl = document.getElementById(firstNameId);
+	var lastNameId = 'last-name';
+	var lastNameEl = document.getElementById(lastNameId);
+	var addressId = 'address';
+	var addressEl = document.getElementById(addressId);
+	var citiesId = 'cities';
+	var citiesEl = document.getElementById(citiesId);
+	var hobbield = 'hobbies';
+	var hobbiesEl = document.getElementById(hobbiesId);
+	//var avatarId = 'avatar-wrapper';
+	//var avatarEl = document.getElementById(avatarId);
 
+	window.alert(firstNameEl.value);
+	window.alert(firstNameEl.className);
+	window.alert(lastNameEl.value);
+	window.alert(lastNameEl.className);
+	window.alert(addressEl.value);
+	window.alert(addressEl.className);
+	window.alert(citiesEl.value);
+	window.alert(hobbiesEl.value);
 
-
-
+	//window.alert(avatarEl.innerHTML);
 </script>
