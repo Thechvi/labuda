@@ -1,17 +1,36 @@
-<input value='Vitali' class='first-name-input' id='first-name'>
-<input value='Chabatar' class='last-name-input' id='last-name'>
-<input value='Szczecin' class='address-input' id='address'>
-<select id='cities'>
-	<option>Kiev</option>
-	<option selected='selected'>Minsk</option>
-	<option>Szczecin</option>
-</select>
-<textarea id='hobbies'>HTML, CSS, JS</textarea>
-<!--<div id='avatar-wrapper'>
-	<img src='https://www.studiplom.ru/LK/user/2/kp/Mashina_moechnaya_dlya_moyki_detaley_mashin(2).png' />
-</div> -->
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1></h1>
+	<input value='Vitali' title='Enter your name' class='first-name-input default-input' id='first-name' />
+	<input value='Chabatar' title='Enter your last name' class='last-name-input default-input' id='last-name' />
+	<input value='Szczecin' title='Enter your address' class='address-input default-input' id='address' />
+	<select id='cities'>
+		<option>Kiev</option>
+		<option>Minsk</option>
+		<option selected='selected'>Szczecin</option>
+	</select>
+	<textarea id='hobbies'>HTML, CSS, JS</textarea>
+	<div id='avatar-wrapper'>
+		<img id='avatar' src='https://www.studiplom.ru/LK/user/2/kp/Mashina_moechnaya_dlya_moyki_detaley_mashin(2).png'
+			alt='аватарка' />
+	</div>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
+
+<!--<script>
 	//определяем переменные
 	var firstNameId = 'first-name';
 	var firstNameEl = document.getElementById(firstNameId);
@@ -21,19 +40,48 @@
 	var addressEl = document.getElementById(addressId);
 	var citiesId = 'cities';
 	var citiesEl = document.getElementById(citiesId);
-	var hobbield = 'hobbies';
+	var hobbiesId = 'hobbies';
 	var hobbiesEl = document.getElementById(hobbiesId);
-	//var avatarId = 'avatar-wrapper';
-	//var avatarEl = document.getElementById(avatarId);
+	var avatarWrapperId = 'avatar-wrapper';
+	var avatarWrapperEl = document.getElementById(avatarWrapperId);
+	var avatarId = 'avatar';
+	var avatarEl = document.getElementById(avatarId);
 
-	window.alert(firstNameEl.value);
-	window.alert(firstNameEl.className);
-	window.alert(lastNameEl.value);
-	window.alert(lastNameEl.className);
-	window.alert(addressEl.value);
-	window.alert(addressEl.className);
-	window.alert(citiesEl.value);
-	window.alert(hobbiesEl.value);
+	//window.alert(firstNameEl.value);
+	//window.alert(firstNameEl.className);
+	//window.alert(lastNameEl.value);
+	//window.alert(lastNameEl.className);
+	//window.alert(addressEl.value);
+	//window.alert(addressEl.className);
+	//window.alert(citiesEl.value);
+	//window.alert(hobbiesEl.value);
+	//window.alert(avatarEl.alt);
+	firstNameEl.value = 'Usik';
+	lastNameEl.setAttribute('value', 'Grabovkiy');
+	//lastNameEl.className = 't1emp';
 
-	//window.alert(avatarEl.innerHTML);
+	lastNameEl.className = 'last-name-input default-input error-input';
+	avatarEl.src = 'https://www.codecademy.com/webpack/c41d5739bf341f298860a4e1c0bd432e.svg';
+	avatarEl.title = 'Im avatar';
+	lastNameEl.title = 'Wrong lastName';
+	citiesEl.value = 'Minsk';
+	hobbiesEl.value = 'I dont hobbies';
+	avatarWrapperEl.innerHTML = '<ul id="list"><li>1</li><li>2</li></ul>';
+	var listId = 'list';
+	var numberList = document.getElementById(listId);
+	window.alert(numberList.innerHTML);
+
+
+
 </script>
+
+<style>
+	.default-input {
+		border: green 6px solid;
+		padding: 5px;
+	}
+
+	.error-input {
+		border-color: red;
+	}
+</style>-->
